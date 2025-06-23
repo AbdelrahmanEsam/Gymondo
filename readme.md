@@ -9,7 +9,7 @@ Gymondo is an app will help you to know the weather in any city you want. for th
 
 ## Data package that have shared dataStore and http client classes .
 
-## DI package that have two modules
+## DI package that have two hilt modules
 
 - App module to provide the shared dependencies.
 - Dispatcher module to provide coroutine dispatchers
