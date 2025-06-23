@@ -14,11 +14,10 @@ Gymondo is an app will help you to know the weather in any city you want. for th
 - App module to provide the shared dependencies.
 - Dispatcher module to provide coroutine dispatchers
 
-# Navigation package that have our navigation graph (in bigger sample we can take different approach)
+## Navigation package that have our navigation graph (in bigger sample we can take different approach)
 
-# features package that contains our features.
+## features package that contains our features.
 
- <img src="images/AndroidTemplate-CleanArchitecture.jpg" alt="ArchiTecture logo"/>
 
 ## Tests
 
@@ -42,7 +41,7 @@ Gymondo is an app will help you to know the weather in any city you want. for th
       )
 - Edge To Edge Configuration
 
-# Extra mile if it is bigger project
+## Extra mile if it is bigger project
 
 1. We can support adaptive layouts
 2. Modularize the app or may use micro-frontend arch
