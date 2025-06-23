@@ -1,0 +1,102 @@
+[versions]
+coreTesting = "2.2.0"
+datastorePreferences = "1.1.7"
+javaVersion = "21"
+compileSdk = "35"
+kotlinxCollectionsImmutable = "0.3.7"
+kotlinxCoroutinesTest = "1.10.2"
+kotlinxDatetime = "0.6.1"
+mockitoCore = "5.12.0"
+mockitoKotlin = "5.4.0"
+mockk = "1.14.3"
+targetSdk = "35"
+minSdk = "28"
+versionCode = "1"
+versionName = "1.0"
+agp = "8.10.1"
+kotlin = "2.1.21"
+coreKtx = "1.16.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.9.1"
+activityCompose = "1.10.1"
+composeBom = "2025.06.01"
+daggerHiltCompiler = "2.56.2"
+hiltCompiler = "1.2.0"
+hiltNavigation = "1.2.0"
+coil3 = "3.2.0"
+coil-ktor = "3.2.0"
+ktor = "3.1.2"
+kotlinXSerialization = "1.8.1"
+kspVersion = "2.1.21-2.0.1"
+gradleSecrets = "2.0.1"
+navigationCompose = "2.9.0"
+splashScreen = "1.0.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTesting" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+
+
+androidx-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltCompiler" }
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigation" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerHiltCompiler" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "daggerHiltCompiler" }
+
+kotlinx-collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlinxCollectionsImmutable" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
+
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil3" }
+coil-svg = { module = "io.coil-kt.coil3:coil-svg", version.ref = "coil3" }
+coil-compose-core = { module = "io.coil-kt.coil3:coil-compose-core", version.ref = "coil3" }
+coil-network-ktor = { module = "io.coil-kt.coil3:coil-network-ktor3", version.ref = "coil-ktor" }
+coil-mp = { module = "io.coil-kt.coil3:coil", version.ref = "coil3" }
+
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinXSerialization" }
+kotlin-reflection = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+splash-screen = { module = "androidx.core:core-splashscreen", version.ref = "splashScreen" }
+
+[bundles]
+hilt = ["hilt-android", "androidx-hilt-navigation-compose"]
+coil = ["coil-compose", "coil-svg", "coil-compose-core", "coil-network-ktor", "coil-mp"]
+livecycle = ["androidx-lifecycle-runtime-ktx", "androidx-lifecycle-viewmodel-ktx"]
+ktor = ["ktor-client-core", "ktor-client-okhttp", "ktor-client-content-negotiation", "ktor-client-logging", "ktor-serialization-kotlinx-json", "ktor-client-auth"]
+compose = ["androidx-activity-compose", "androidx-material3", "androidx-ui", "androidx-navigation-compose", "androidx-ui-graphics", "androidx-ui-tooling-preview"]
+android-debug = ["androidx-junit", "androidx-espresso-core", "androidx-ui-test-junit4", "androidx-ui-test-manifest"]
+debug = ["androidx-ui-test-manifest", "androidx-ui-tooling"]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "kspVersion" }
+gradle-secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "gradleSecrets" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "daggerHiltCompiler" }
+

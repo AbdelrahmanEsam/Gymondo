@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Gymondo</string>
+    <string name="weather_image">weather image</string>
+    <string name="hourly_forecast">hourly forecast</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="humidity">humidity</string>
+    <string name="cloud">cloud</string>
+    <string name="sunset">Sunset</string>
+    <string name="rain_chance">Rain Chance</string>
+    <string name="pressure">Pressure</string>
+    <string name="uv_index">Uv index</string>
+    <string name="km_h">%1$s KM/h</string>
+    <string name="percent">%1$s%%</string>
+    <string name="hps">%1$s hps</string>
+    <string name="temperature">%1$s°</string>
+    <string name="feels_like_temperature">Feels like %1$s°</string>
+
+
+    <string name="network_invalid_data">your data is invalid</string>
+    <string name="network_error_conflict">please try again</string>
+    <string name="network_error_try_again">network error please try again</string>
+    <string name="error_unknown">something went wrong please try again</string>
+    <string name="network_no_internet">your internet connection is lost</string>
+    <string name="internet_connection_restored">you are connected now</string>
+
+    <string name="main">Main</string>
+    <string name="settings">Settings</string>
+
+    <string name="please_add_your_city">please add your city name</string>
+    <string name="save">save</string>
+    <string name="data_store">dataStore</string>
+    <string name="berlin">berlin, germany</string>
+
+    <string-array name="segmented_control">
+        <item name="today">today</item>
+        <item name="10 days">10 days</item>
+    </string-array>
+</resources>
