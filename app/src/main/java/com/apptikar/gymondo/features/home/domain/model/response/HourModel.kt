@@ -27,7 +27,7 @@ data class HourModel(
     val tempC: Int,
     val tempF: Double,
     val time: String,
-    val timeEpoch: Int,
+    val timeEpoch: String,
     val uv: Double,
     val visKm: Double,
     val visMiles: Double,

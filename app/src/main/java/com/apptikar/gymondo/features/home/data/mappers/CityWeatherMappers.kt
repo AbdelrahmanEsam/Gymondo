@@ -109,7 +109,7 @@ fun HourDto.toHourModel(): HourModel {
         tempC = tempC.toInt(),
         tempF = tempF,
         time = time.toDayNameWithMonth(),
-        timeEpoch = timeEpoch.epochToHour(),
+        timeEpoch = time.split(" ").last(),
         uv = uv,
         visKm = visKm,
         visMiles = visMiles,

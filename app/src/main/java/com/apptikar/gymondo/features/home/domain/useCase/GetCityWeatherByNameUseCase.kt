@@ -18,7 +18,9 @@ class GetCityWeatherByNameUseCase @Inject constructor(private val homeRepository
                 forecast = weather.forecast.copy(
                     forecastDay = weather.forecast.forecastDay.map {
                         it.copy(
-                            hour = it.hour.take(8)
+                            hour = it.hour.filterIndexed { index, item ->
+                                index % 3 == 0
+                            }
                         )
                     }.take(numberOfDays.coerceAtLeast(1))
                 )
